@@ -1,0 +1,22 @@
+{
+  "name": "BrytescoreObjcAPI",
+  "version": "0.1.0",
+  "summary": "A short description of BrytescoreObjcAPI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mcgomez/BrytescoreObjcAPI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mcgomez": "marisa.gomez25@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/mcgomez/BrytescoreObjcAPI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BrytescoreObjcAPI/Classes/**/*"
+}
