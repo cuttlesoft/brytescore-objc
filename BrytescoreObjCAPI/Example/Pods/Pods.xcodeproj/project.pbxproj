@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00BF9EB4D45944819D54AF37AB9D61C6 /* BrytescoreObjcAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CCDEF73A19703D6483801D6B58738D /* BrytescoreObjcAPI-dummy.m */; };
+		0733B6E58B0327A1D7344ECA66D63ECC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		363FE64196CA0CAE4B66DD0617DD8B01 /* BrytescoreObjcAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB98436CB4391A9B05FF43F536CA643 /* BrytescoreObjcAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4878B2386BB4DD530E2CB748001A3AF5 /* Pods-BrytescoreObjcAPI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 776A6575B300153331DDBE83E315AAA0 /* Pods-BrytescoreObjcAPI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F024E4DF8BBEBC9E91F208EC1DF0591 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		58B9D7667FA6FDAA8B26483D6CCA7718 /* BrytescoreAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AE22D0C52FEC1DDE794C0BD07425F0 /* BrytescoreAPIManager.m */; };
 		69A3B64810B1A30EFC57A01034546049 /* Pods-BrytescoreObjcAPI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC533FC7C93D2F9B47D79B45E09EB3F8 /* Pods-BrytescoreObjcAPI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B1B930C0B068492D7D89657A24699BE /* Pods-BrytescoreObjcAPI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B70312692C74B2DD34D87DC46A8892 /* Pods-BrytescoreObjcAPI_Tests-dummy.m */; };
-		9D20044E9452FEB7C2D7E5EB126E8767 /* BrytescoreObjcAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4140538F1515FFFDBAECEC3009120B29 /* BrytescoreObjcAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D9638E40206F360BBF0D0F333EA3C80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		B43A7C77CC2A23808F4430C881CF11CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		BA1BD80195F8BC7F19C1746330B60C88 /* BrytescoreObjcAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEB384A40CD85A693BFAF4E0146C14F /* BrytescoreObjcAPI-dummy.m */; };
-		C2F6FD1EC53FAE1FEA0B45AFDA82A5F6 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 09472ADCABFABBF639FC36F0FB32547D /* ReplaceMe.m */; };
 		D20813AF5467B837855AC832F295C5B0 /* Pods-BrytescoreObjcAPI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FED20F533E8C35625D5FD814ED92660 /* Pods-BrytescoreObjcAPI_Example-dummy.m */; };
+		E2425E12EAA3F319E69D4CF496343AED /* BrytescoreAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B63B6CB43DCDE7E32006C49E9066550 /* BrytescoreAPIManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,58 +32,51 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A002760E10F775767E6ED0E39B73DC20;
+			remoteGlobalIDString = 59441611E738EBCC683625E79E386FCE;
 			remoteInfo = BrytescoreObjcAPI;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09472ADCABFABBF639FC36F0FB32547D /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = BrytescoreObjcAPI/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		03AE22D0C52FEC1DDE794C0BD07425F0 /* BrytescoreAPIManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BrytescoreAPIManager.m; path = BrytescoreObjcAPI/Classes/BrytescoreAPIManager.m; sourceTree = "<group>"; };
 		1C7DF343A1D80BA31B569D51E3659268 /* BrytescoreObjcAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BrytescoreObjcAPI.framework; path = BrytescoreObjcAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F1F07541364FC1F34B09F6544EEE31B /* Pods-BrytescoreObjcAPI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BrytescoreObjcAPI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		25E913552F09F7CC38672E31CE0D6AE4 /* Pods-BrytescoreObjcAPI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BrytescoreObjcAPI_Example.modulemap"; sourceTree = "<group>"; };
+		282FD156A38F1AADBF6E64D2DFCC8092 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		293C13D1CC0C5ACDB331617DD9FBA93E /* BrytescoreObjcAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrytescoreObjcAPI-prefix.pch"; sourceTree = "<group>"; };
+		2EB1F886B923ACF02321F629DAD588B8 /* BrytescoreObjcAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BrytescoreObjcAPI.modulemap; sourceTree = "<group>"; };
 		2F585BF0A73AEE7D6BD3B39BB8C44877 /* Pods_BrytescoreObjcAPI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BrytescoreObjcAPI_Tests.framework; path = "Pods-BrytescoreObjcAPI_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FB98436CB4391A9B05FF43F536CA643 /* BrytescoreObjcAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrytescoreObjcAPI-umbrella.h"; sourceTree = "<group>"; };
 		2FED20F533E8C35625D5FD814ED92660 /* Pods-BrytescoreObjcAPI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BrytescoreObjcAPI_Example-dummy.m"; sourceTree = "<group>"; };
+		35F7E8BA5E8CD14CF1A3C69C75B9B9EB /* BrytescoreObjcAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrytescoreObjcAPI.xcconfig; sourceTree = "<group>"; };
 		39E3D8431E7D7BAF134679B31689BB20 /* Pods-BrytescoreObjcAPI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BrytescoreObjcAPI_Tests.modulemap"; sourceTree = "<group>"; };
 		3B7F884FD310B12F3B77DD8683620957 /* Pods-BrytescoreObjcAPI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BrytescoreObjcAPI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4140538F1515FFFDBAECEC3009120B29 /* BrytescoreObjcAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrytescoreObjcAPI-umbrella.h"; sourceTree = "<group>"; };
+		4B63B6CB43DCDE7E32006C49E9066550 /* BrytescoreAPIManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BrytescoreAPIManager.h; path = BrytescoreObjcAPI/Classes/BrytescoreAPIManager.h; sourceTree = "<group>"; };
 		4CCD4CD809AA32316960AFE2F3A61FBE /* Pods-BrytescoreObjcAPI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BrytescoreObjcAPI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		52D399B434E129426131F973C95CDB42 /* Pods-BrytescoreObjcAPI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BrytescoreObjcAPI_Example-frameworks.sh"; sourceTree = "<group>"; };
+		59CCDEF73A19703D6483801D6B58738D /* BrytescoreObjcAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BrytescoreObjcAPI-dummy.m"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6DEB384A40CD85A693BFAF4E0146C14F /* BrytescoreObjcAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BrytescoreObjcAPI-dummy.m"; sourceTree = "<group>"; };
 		776A6575B300153331DDBE83E315AAA0 /* Pods-BrytescoreObjcAPI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BrytescoreObjcAPI_Tests-umbrella.h"; sourceTree = "<group>"; };
 		77B70312692C74B2DD34D87DC46A8892 /* Pods-BrytescoreObjcAPI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BrytescoreObjcAPI_Tests-dummy.m"; sourceTree = "<group>"; };
-		79CE6D70A5A73FB64572323264A2BD97 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		7B6DDBC39BB3968A77679644A8FEFB4D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		81B73FE1F7ED50EB1015A92D45DABB96 /* Pods-BrytescoreObjcAPI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BrytescoreObjcAPI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		971FEE98903AF9102418A00ED7E73DA8 /* Pods_BrytescoreObjcAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BrytescoreObjcAPI_Example.framework; path = "Pods-BrytescoreObjcAPI_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D802D085A5BDE14C491281839FAFE5D /* BrytescoreObjcAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BrytescoreObjcAPI.modulemap; sourceTree = "<group>"; };
 		9E977880E6435A68C6C9B18D030ADD9B /* Pods-BrytescoreObjcAPI_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BrytescoreObjcAPI_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		A2217B501A473E8EA92B10C86D01AAD6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A77418DAFC31D992B8D0D6B61A1BF463 /* Pods-BrytescoreObjcAPI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BrytescoreObjcAPI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF6569EB46AF436723A10FC6EFC15B7D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B903FB0F8F7CE7A6C550A59FFCD97A86 /* Pods-BrytescoreObjcAPI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BrytescoreObjcAPI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C6A312E81A01A78AF2E8CEDEEC9134BC /* BrytescoreObjcAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrytescoreObjcAPI.xcconfig; sourceTree = "<group>"; };
 		CA150356C33EDCBCCA7E92E1E671F82B /* Pods-BrytescoreObjcAPI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BrytescoreObjcAPI_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CA2E6C429C4C0F74D8AAB6A524ACD37F /* BrytescoreObjcAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrytescoreObjcAPI-prefix.pch"; sourceTree = "<group>"; };
 		CC533FC7C93D2F9B47D79B45E09EB3F8 /* Pods-BrytescoreObjcAPI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BrytescoreObjcAPI_Example-umbrella.h"; sourceTree = "<group>"; };
-		D69C7DF0EC7854EFDB743A843CF971BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9822F61B625D5DAEB5E25720C7F7DDB /* BrytescoreObjcAPI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = BrytescoreObjcAPI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DEB93CF21EC9655BAEC1722F72D434A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DFC1D5BFD0B3BE4207048D6526A79E6C /* BrytescoreObjcAPI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = BrytescoreObjcAPI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E4F8F994DD6D9AAB234327E692CB6CC1 /* Pods-BrytescoreObjcAPI_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BrytescoreObjcAPI_Tests-resources.sh"; sourceTree = "<group>"; };
+		F735D1217B66BBAF02B1050792D60BCA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		FD4D3AE162CF83107F5627887293D8F2 /* Pods-BrytescoreObjcAPI_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BrytescoreObjcAPI_Example-resources.sh"; sourceTree = "<group>"; };
 		FD92934FB5B4D63BDAFC3B14C68FD109 /* Pods-BrytescoreObjcAPI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BrytescoreObjcAPI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		01BD8739C06247A73EDB1600B8D32359 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4F024E4DF8BBEBC9E91F208EC1DF0591 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3EB40670F96F6C5C85DBC2F6EBC8C371 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,9 +93,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF7A105B7B8A7A08CC607E4CBEAD0BED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0733B6E58B0327A1D7344ECA66D63ECC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0583A6B7EA1A1C4F4E85FCBD254D75C4 /* BrytescoreObjcAPI */ = {
+			isa = PBXGroup;
+			children = (
+				4B63B6CB43DCDE7E32006C49E9066550 /* BrytescoreAPIManager.h */,
+				03AE22D0C52FEC1DDE794C0BD07425F0 /* BrytescoreAPIManager.m */,
+				4B206518859C2A8564CF65DF9A4237A3 /* Pod */,
+				99B710A7D777B774C6A8496335DE2D5A /* Support Files */,
+			);
+			name = BrytescoreObjcAPI;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		1412E73A9F6433766D5F798E107C5D7B /* Pods-BrytescoreObjcAPI_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,20 +134,6 @@
 			path = "Target Support Files/Pods-BrytescoreObjcAPI_Tests";
 			sourceTree = "<group>";
 		};
-		1932332444ECD416E3F01B65C8C16093 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9D802D085A5BDE14C491281839FAFE5D /* BrytescoreObjcAPI.modulemap */,
-				C6A312E81A01A78AF2E8CEDEEC9134BC /* BrytescoreObjcAPI.xcconfig */,
-				6DEB384A40CD85A693BFAF4E0146C14F /* BrytescoreObjcAPI-dummy.m */,
-				CA2E6C429C4C0F74D8AAB6A524ACD37F /* BrytescoreObjcAPI-prefix.pch */,
-				4140538F1515FFFDBAECEC3009120B29 /* BrytescoreObjcAPI-umbrella.h */,
-				D69C7DF0EC7854EFDB743A843CF971BC /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/BrytescoreObjcAPI";
-			sourceTree = "<group>";
-		};
 		4726B4D2F38BFDA092332BC3783952C8 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +141,16 @@
 				1412E73A9F6433766D5F798E107C5D7B /* Pods-BrytescoreObjcAPI_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4B206518859C2A8564CF65DF9A4237A3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DFC1D5BFD0B3BE4207048D6526A79E6C /* BrytescoreObjcAPI.podspec */,
+				F735D1217B66BBAF02B1050792D60BCA /* LICENSE */,
+				DEB93CF21EC9655BAEC1722F72D434A2 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
@@ -155,22 +165,11 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				90D90C7EBD3A7B82BC7658D8C018F430 /* Development Pods */,
+				CF2D003BD590C2191C01DBF2200F5CDF /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				DFDC45D4A23D54D7C02DCE8F855E5881 /* Products */,
 				4726B4D2F38BFDA092332BC3783952C8 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		820EFAE25E5BBADF9B07588EF24A5E7A /* BrytescoreObjcAPI */ = {
-			isa = PBXGroup;
-			children = (
-				09472ADCABFABBF639FC36F0FB32547D /* ReplaceMe.m */,
-				BF55FCFA47B0613A260ED041F88A7AD3 /* Pod */,
-				1932332444ECD416E3F01B65C8C16093 /* Support Files */,
-			);
-			name = BrytescoreObjcAPI;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		87E916EE1703289CD885AFC28483E21B /* Pods-BrytescoreObjcAPI_Example */ = {
@@ -191,12 +190,18 @@
 			path = "Target Support Files/Pods-BrytescoreObjcAPI_Example";
 			sourceTree = "<group>";
 		};
-		90D90C7EBD3A7B82BC7658D8C018F430 /* Development Pods */ = {
+		99B710A7D777B774C6A8496335DE2D5A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				820EFAE25E5BBADF9B07588EF24A5E7A /* BrytescoreObjcAPI */,
+				2EB1F886B923ACF02321F629DAD588B8 /* BrytescoreObjcAPI.modulemap */,
+				35F7E8BA5E8CD14CF1A3C69C75B9B9EB /* BrytescoreObjcAPI.xcconfig */,
+				59CCDEF73A19703D6483801D6B58738D /* BrytescoreObjcAPI-dummy.m */,
+				293C13D1CC0C5ACDB331617DD9FBA93E /* BrytescoreObjcAPI-prefix.pch */,
+				2FB98436CB4391A9B05FF43F536CA643 /* BrytescoreObjcAPI-umbrella.h */,
+				282FD156A38F1AADBF6E64D2DFCC8092 /* Info.plist */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BrytescoreObjcAPI";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -207,14 +212,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BF55FCFA47B0613A260ED041F88A7AD3 /* Pod */ = {
+		CF2D003BD590C2191C01DBF2200F5CDF /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D9822F61B625D5DAEB5E25720C7F7DDB /* BrytescoreObjcAPI.podspec */,
-				7B6DDBC39BB3968A77679644A8FEFB4D /* LICENSE */,
-				79CE6D70A5A73FB64572323264A2BD97 /* README.md */,
+				0583A6B7EA1A1C4F4E85FCBD254D75C4 /* BrytescoreObjcAPI */,
 			);
-			name = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		DFDC45D4A23D54D7C02DCE8F855E5881 /* Products */ = {
@@ -246,17 +249,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		19EDC5D71666E3DB1327E8591A21209B /* Headers */ = {
+		6C30001F9302A6EC32250928E424D1BB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D20044E9452FEB7C2D7E5EB126E8767 /* BrytescoreObjcAPI-umbrella.h in Headers */,
+				E2425E12EAA3F319E69D4CF496343AED /* BrytescoreAPIManager.h in Headers */,
+				363FE64196CA0CAE4B66DD0617DD8B01 /* BrytescoreObjcAPI-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		59441611E738EBCC683625E79E386FCE /* BrytescoreObjcAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 399D41519ECCA68C7D324FE37954ADA2 /* Build configuration list for PBXNativeTarget "BrytescoreObjcAPI" */;
+			buildPhases = (
+				6C30001F9302A6EC32250928E424D1BB /* Headers */,
+				DC009206F48C559375397C4A40773BE3 /* Sources */,
+				DF7A105B7B8A7A08CC607E4CBEAD0BED /* Frameworks */,
+				5580606E08F8A49DD649D9195FE2EA70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrytescoreObjcAPI;
+			productName = BrytescoreObjcAPI;
+			productReference = 1C7DF343A1D80BA31B569D51E3659268 /* BrytescoreObjcAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		66041C787B8438FF926843F2F9074C5C /* Pods-BrytescoreObjcAPI_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AC87C1DBF36DFC08BC68912A7609961 /* Build configuration list for PBXNativeTarget "Pods-BrytescoreObjcAPI_Example" */;
@@ -295,24 +317,6 @@
 			productReference = 2F585BF0A73AEE7D6BD3B39BB8C44877 /* Pods_BrytescoreObjcAPI_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A002760E10F775767E6ED0E39B73DC20 /* BrytescoreObjcAPI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 867F2664ADD956FC22617B1E837A9E27 /* Build configuration list for PBXNativeTarget "BrytescoreObjcAPI" */;
-			buildPhases = (
-				19EDC5D71666E3DB1327E8591A21209B /* Headers */,
-				90B2EB1F49DDCB0A8870FFDDF9D1A2C6 /* Sources */,
-				01BD8739C06247A73EDB1600B8D32359 /* Frameworks */,
-				03B107057F22CE2A1C8A3E8791820167 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BrytescoreObjcAPI;
-			productName = BrytescoreObjcAPI;
-			productReference = 1C7DF343A1D80BA31B569D51E3659268 /* BrytescoreObjcAPI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -334,7 +338,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A002760E10F775767E6ED0E39B73DC20 /* BrytescoreObjcAPI */,
+				59441611E738EBCC683625E79E386FCE /* BrytescoreObjcAPI */,
 				66041C787B8438FF926843F2F9074C5C /* Pods-BrytescoreObjcAPI_Example */,
 				9078683B1D92F94D0963B0BFBBE27E69 /* Pods-BrytescoreObjcAPI_Tests */,
 			);
@@ -342,7 +346,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		03B107057F22CE2A1C8A3E8791820167 /* Resources */ = {
+		5580606E08F8A49DD649D9195FE2EA70 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -366,15 +370,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		90B2EB1F49DDCB0A8870FFDDF9D1A2C6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BA1BD80195F8BC7F19C1746330B60C88 /* BrytescoreObjcAPI-dummy.m in Sources */,
-				C2F6FD1EC53FAE1FEA0B45AFDA82A5F6 /* ReplaceMe.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		95FFFF4BAB7F6EC5B121D75E7A06F6E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,13 +386,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC009206F48C559375397C4A40773BE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58B9D7667FA6FDAA8B26483D6CCA7718 /* BrytescoreAPIManager.m in Sources */,
+				00BF9EB4D45944819D54AF37AB9D61C6 /* BrytescoreObjcAPI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		44514E890C8392FCE1ACCC75C5474872 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BrytescoreObjcAPI;
-			target = A002760E10F775767E6ED0E39B73DC20 /* BrytescoreObjcAPI */;
+			target = 59441611E738EBCC683625E79E386FCE /* BrytescoreObjcAPI */;
 			targetProxy = D5C3B10B66CA651B07822F12DB0FF580 /* PBXContainerItemProxy */;
 		};
 		CE9A570EEBC3C499E66BB8EBEA0A032A /* PBXTargetDependency */ = {
@@ -409,6 +413,36 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		142720515F0C59D9CF9DA8EE65588283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35F7E8BA5E8CD14CF1A3C69C75B9B9EB /* BrytescoreObjcAPI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BrytescoreObjcAPI/BrytescoreObjcAPI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BrytescoreObjcAPI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BrytescoreObjcAPI/BrytescoreObjcAPI.modulemap";
+				PRODUCT_MODULE_NAME = BrytescoreObjcAPI;
+				PRODUCT_NAME = BrytescoreObjcAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		28A90CB0AD83FA2A74B70E81FAFACDC7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F1F07541364FC1F34B09F6544EEE31B /* Pods-BrytescoreObjcAPI_Tests.release.xcconfig */;
@@ -602,9 +636,9 @@
 			};
 			name = Debug;
 		};
-		8FFC6D4984C98DD493603B23B9C0ED18 /* Release */ = {
+		7D7A44EF14D7FB98D9FA520E18EF0694 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6A312E81A01A78AF2E8CEDEEC9134BC /* BrytescoreObjcAPI.xcconfig */;
+			baseConfigurationReference = 35F7E8BA5E8CD14CF1A3C69C75B9B9EB /* BrytescoreObjcAPI.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -632,36 +666,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		ABDB0A04BF6323DF2ADB0EF4F7CA62CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6A312E81A01A78AF2E8CEDEEC9134BC /* BrytescoreObjcAPI.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BrytescoreObjcAPI/BrytescoreObjcAPI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BrytescoreObjcAPI/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BrytescoreObjcAPI/BrytescoreObjcAPI.modulemap";
-				PRODUCT_MODULE_NAME = BrytescoreObjcAPI;
-				PRODUCT_NAME = BrytescoreObjcAPI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		BEFDB93BF207328A04F1220475D02C3B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -739,20 +743,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		399D41519ECCA68C7D324FE37954ADA2 /* Build configuration list for PBXNativeTarget "BrytescoreObjcAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				142720515F0C59D9CF9DA8EE65588283 /* Debug */,
+				7D7A44EF14D7FB98D9FA520E18EF0694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6AC87C1DBF36DFC08BC68912A7609961 /* Build configuration list for PBXNativeTarget "Pods-BrytescoreObjcAPI_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				331D2537FBD114572D4BA2F76E268488 /* Debug */,
 				2DC13F2B8FEBCB73FBC24F4CCE267F90 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		867F2664ADD956FC22617B1E837A9E27 /* Build configuration list for PBXNativeTarget "BrytescoreObjcAPI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ABDB0A04BF6323DF2ADB0EF4F7CA62CF /* Debug */,
-				8FFC6D4984C98DD493603B23B9C0ED18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

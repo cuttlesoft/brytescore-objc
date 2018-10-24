@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'BrytescoreObjcAPI'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of BrytescoreObjcAPI.'
+  s.summary          = 'Track user behavior and score their engagment with the Brytescore API.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+brytescore-objc is the open-source iOS SDK that connects your app with the Brytescore API. The Brytescore API allows you to track your users' behavior and score their engagement.
                        DESC
 
-  s.homepage         = 'https://github.com/mcgomez/BrytescoreObjcAPI'
+  s.homepage         = 'https://github.com/Brytecore/brytescore-objc'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'mcgomez' => 'marisa.gomez25@gmail.com' }
-  s.source           = { :git => 'https://github.com/mcgomez/BrytescoreObjcAPI.git', :tag => s.version.to_s }
+  s.author           = { 'emilyemorehouse' => 'engineering@cuttlesoft.com' }
+  s.source           = { :git => 'https://github.com/Brytecore/brytescore-objc.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

@@ -7,7 +7,7 @@
 //
 
 @import UIKit;
-#import "BrytescoreObjcAPIAppDelegate.h"
+#import "AppDelegate.h"
 
 int main(int argc, char * argv[])
 {

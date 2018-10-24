@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "BrytescoreAPIManager.h"
 
 FOUNDATION_EXPORT double BrytescoreObjcAPIVersionNumber;
 FOUNDATION_EXPORT const unsigned char BrytescoreObjcAPIVersionString[];

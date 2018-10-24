@@ -1,18 +1,18 @@
 {
   "name": "BrytescoreObjcAPI",
   "version": "0.1.0",
-  "summary": "A short description of BrytescoreObjcAPI.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/mcgomez/BrytescoreObjcAPI",
+  "summary": "Track user behavior and score their engagment with the Brytescore API.",
+  "description": "brytescore-objc is the open-source iOS SDK that connects your app with the Brytescore API. The Brytescore API allows you to track your users' behavior and score their engagement.",
+  "homepage": "https://github.com/Brytecore/brytescore-objc",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "mcgomez": "marisa.gomez25@gmail.com"
+    "emilyemorehouse": "engineering@cuttlesoft.com"
   },
   "source": {
-    "git": "https://github.com/mcgomez/BrytescoreObjcAPI.git",
+    "git": "https://github.com/Brytecore/brytescore-objc.git",
     "tag": "0.1.0"
   },
   "platforms": {
