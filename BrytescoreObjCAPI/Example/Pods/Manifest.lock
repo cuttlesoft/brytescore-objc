@@ -1,0 +1,16 @@
+PODS:
+  - BrytescoreObjcAPI (0.1.0)
+
+DEPENDENCIES:
+  - BrytescoreObjcAPI (from `../`)
+
+EXTERNAL SOURCES:
+  BrytescoreObjcAPI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BrytescoreObjcAPI: 453decb9b450517fe400c6af94982c57b7a14d07
+
+PODFILE CHECKSUM: 8a1aa47753c30e8807102c4ec5657a1b071a3bcf
+
+COCOAPODS: 1.5.3

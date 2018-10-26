@@ -15,8 +15,8 @@ brytescore-objc is available through [CocoaPods](http://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-    use_frameworks!
-    pod "BrytescoreObjcAPI"
+use_frameworks!
+pod "BrytescoreObjcAPI"
 ```
 
 ## Import BrytescoreAPI
@@ -25,7 +25,7 @@ Import brytescore-objc in your .h file.
 
 #### Objective-C
 ```objective-c
-    @import BrytescoreObjcAPI;
+@import BrytescoreObjcAPI;
 ```
 
 ## Methods
@@ -40,7 +40,7 @@ Retrieves the saved user ID, if any.
 
 #### Objective-C
 ```objective-c
-    BrytescoreAPIManager *apiManager = [[BrytescoreAPIManager alloc] initWithApiKey: @"<api-key>"];
+BrytescoreAPIManager *apiManager = [[BrytescoreAPIManager alloc] initWithApiKey: @"<api-key>"];
 ```
 
 ### getAPIKey
@@ -51,7 +51,7 @@ Returns the current API key
 
 #### Objective-C
 ```objetive-c
-    [apiManager getAPIKey];
+[apiManager getAPIKey];
 ```
 
 ### load
@@ -62,7 +62,7 @@ Function to load json packages.
 
 #### Objective-C
 ```objective-c
-    [apiManager load:@"realestate"];
+[apiManager load:@"realestate"];
 ```
 
 ### devMode
@@ -75,7 +75,7 @@ Turning on dev mode automatically triggers debug mode.
 
 #### Objective-C
 ```objective-c
-    [apiManager devMode:enabled];
+[apiManager devMode:enabled];
 ```
 
 ### debugMode
@@ -87,7 +87,7 @@ Log events are suppressed when debug mode is off.
 
 #### Objective-C
 ```objective-c
-    [apiManager debugMode:enabled];
+[apiManager debugMode:enabled];
 ```
 
 ### impersonationMode
@@ -99,7 +99,7 @@ Bypasses sending information to the API when impersonating another user.
 
 #### Objective-C
 ```objective-c
-    [apiManager impersonationModeWithEnabled: enabled];
+[apiManager impersonationModeWithEnabled: enabled];
 ```
 
 ### validationMode
@@ -111,7 +111,7 @@ Adds a validation attribute to the data for all API calls.
 
 #### Objective-C
 ```objective-c
-    [apiManager validationMode:enabled];
+[apiManager validationMode:enabled];
 ```
 
 ### brytescore
@@ -123,7 +123,7 @@ Start tracking a property specific to a loaded package.
 
 #### Objective-C
 ```objective-c
-    [apiManager brytescore:propertyName withData:data];
+[apiManager brytescore:propertyName withData:data];
 ```
 
 ### pageView
@@ -138,7 +138,7 @@ Start a pageView.
 
 #### Objective-C
 ```objective-c
-    [apiManager pageView:data];
+[apiManager pageView:data];
 ```
 
 ### registeredAccount
@@ -151,7 +151,7 @@ Sends a new account registration event.
 
 #### Objective-C
 ```objective-c
-    [apiManager registeredAccount:data];
+[apiManager registeredAccount:data];
 ```
 
 ### submittedForm
@@ -163,7 +163,7 @@ Sends a submittedForm event.
 
 #### Objective-C
 ```objective-c
-    [apiManager submittedForm:data];
+[apiManager submittedForm:data];
 ```
 
 ### startedChat
@@ -176,7 +176,7 @@ Sends a startedChat event.
 
 #### Objective-C
 ```objective-c
-    [apiManager startedChat:data];
+[apiManager startedChat:data];
 ```
 
 ### updatedUserInfo
@@ -187,7 +187,7 @@ Updates a user's account information.
 
 #### Objective-C
 ```objective-c
-    [apiManager updatedUserInfo:data];
+[apiManager updatedUserInfo:data];
 ```
 
 ### authenticated
@@ -202,7 +202,7 @@ Sends a user authentication event.
 
 #### Objective-C
 ```objective-c
-    [apiManager authenticated:data];
+[apiManager authenticated:data];
 ```
 
 ### killSession
@@ -212,5 +212,6 @@ Kills the session.
 
 #### Objective-C
 ```objective-c
-    [apiManager killSession];
+[apiManager killSession];
 ```
+
