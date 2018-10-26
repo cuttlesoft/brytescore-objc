@@ -13,7 +13,7 @@ static NSString* packageUrl = @"https://cdn.brytecore.com/packages/";
 static NSString* packageName = @"/package.json";
 static NSString* hostname = @"com.brytecore.mobile";
 static NSString* library = @"iOS";
-static NSString* libraryVersion = @"0.1.0";
+static NSString* libraryVersion = @"0.1.2";
 static NSDictionary* eventNames;
 
 // --------------------------------- MARK: dynamic variables -------------------------------- //
