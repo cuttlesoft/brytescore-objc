@@ -1,13 +1,10 @@
-//
 //  BrytescoreObjcAPIViewController.m
 //  BrytescoreObjcAPI
 //
 //  Created by mcgomez on 10/16/2018.
 //  Copyright (c) 2018 mcgomez. All rights reserved.
-//
 
 #import "ViewController.h"
-
 
 @interface BrytescoreObjcAPIViewController ()
 
@@ -33,20 +30,20 @@ UIColor* orange;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     apiManager = [[BrytescoreAPIManager alloc] initWithAPIKey:@"abc123"];
-    
+
 	blue = [UIColor colorWithRed:0.15 green:0.66 blue:0.88 alpha:0.8];
     green = [UIColor colorWithRed:0.46 green:0.71 blue:0.24 alpha:0.8];
     orange = [UIColor colorWithRed:0.87 green:0.53 blue:0.20 alpha:0.8];
-    
+
     // Enable dev mode - logs API calls instead of making HTTP request
     [apiManager devMode:devMode];
     char* devModeOn = devMode ? "Off" : "On";
     [_toggleDevModeButton setTitle:[NSString stringWithFormat:@"Toggle Dev Mode: Turn %s", devModeOn] forState:UIControlStateNormal];
     UIColor* devModeBackground = devMode ? orange : green;
     [_toggleDevModeButton setBackgroundColor:devModeBackground];
-    
+
     // Enable debug mode - turns on console logs
     [apiManager debugMode:debugMode];
     [apiManager load:@"realestate"];
@@ -54,19 +51,19 @@ UIColor* orange;
     [_toggleDebugModeButton setTitle:[NSString stringWithFormat:@"Toggle Debug Mode: Turn %s", debugModeOn] forState:UIControlStateNormal];
     UIColor* debugModeBackground = debugMode ? orange : green;
     [_toggleDebugModeButton setBackgroundColor:debugModeBackground];
-    
+
     // Set button colors for unused modes
     UIColor* impersonationModeBackground = impersonationMode ? orange : green;
     UIColor* validationModeBackground = validationMode ? orange : green;
     [_toggleImpersonationModeButton setBackgroundColor:impersonationModeBackground];
     [_toggleValidationModeButton setBackgroundColor:validationModeBackground];
-    
+
     // Update the API Key label to show our API key for debugging
     [_apiKeyLabel setText:[NSString stringWithFormat:@"%@ %@", defaultAPIKeyLabel, [apiManager getAPIKey]]];
-    
+
     // Background listener
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appMovedToBackground) name:UIApplicationWillResignActiveNotification object:nil];
-    
+
     // Foreground listener
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appMovedToForeground) name:UIApplicationDidBecomeActiveNotification object:nil];
 }
@@ -177,7 +174,7 @@ UIColor* orange;
 
 /**
  Toggle devMode bool, pass to _apiManager, update button title and color
- 
+
  - parameter sender: UIButton
  */
 - (IBAction)toggleDevMode:(id)sender {
@@ -187,7 +184,7 @@ UIColor* orange;
     [sender setTitle:[NSString stringWithFormat:@"Toggle Dev Mode: Turn %s", devModeOn] forState:UIControlStateNormal];
     UIColor* devModeBackground = devMode ? orange : green;
     [sender setBackgroundColor:devModeBackground];
-    
+
     // If devMode is now on and debugMode was off, debugMode is now on.
     // Only update if debugMode wasn't already on.
     if (devMode && !debugMode) {
@@ -199,7 +196,7 @@ UIColor* orange;
 
 /**
  Toggle debugMode bool, pass to _apiManager, update button title and color
- 
+
  - parameter sender: UIButton
  */
 - (IBAction)toggleDebugMode:(id)sender {
@@ -213,7 +210,7 @@ UIColor* orange;
 
 /**
  Toggle impersonationMode bool, pass to _apiManager, update button title and color
- 
+
  - parameter sender: UIButton
  */
 - (IBAction)toggleImpersonationMode:(id)sender {
@@ -227,7 +224,7 @@ UIColor* orange;
 
 /**
  Toggle validationMode bool, pass to _apiManager, update button title and color
- 
+
  - parameter sender: UIButton
  */
 - (IBAction)toggleValidationMode:(id)sender {

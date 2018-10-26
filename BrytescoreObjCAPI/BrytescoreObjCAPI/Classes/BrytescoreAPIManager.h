@@ -1,9 +1,7 @@
-//
 //  BrytescoreAPIManager.h
 //  BrytescoreObjcAPI
 //
 //  Created by Marisa Gomez on 10/16/18.
-//
 
 #import <Foundation/Foundation.h>
 

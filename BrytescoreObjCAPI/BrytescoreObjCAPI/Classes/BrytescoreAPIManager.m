@@ -1,25 +1,9 @@
-//
 //  BrytescoreAPIManager.m
 //  BrytescoreObjcAPI
 //
 //  Created by Marisa Gomez on 10/16/18.
-//
 
 #import "BrytescoreAPIManager.h"
-
-//@interface BrytescoreAPIManager()
-//
-//- (void) track:(NSString*)eventName withEventDiplayName:(NSString*)eventDisplayName andData:(NSMutableDictionary*)data;
-//- (void) sendRequest:(NSString*)path withEventName:(NSString*)eventName eventDisplayName:(NSString*)eventDisplayName andData:(NSMutableDictionary*)data;
-//- (NSString*) generateUUID;
-//- (void) changeLoggedInUser:(NSInteger)userID;
-//- (void) heartBeat;
-//- (Boolean) updateUser:(NSMutableDictionary*)data;
-//- (Boolean) checkImpersonation:(NSMutableDictionary*)data;
-//- (void) checkHeartbeat;
-//- (void) print:(NSString*)item;
-//
-//@end
 
 @implementation BrytescoreAPIManager
 // --------------------------------- MARK: static variables --------------------------------- //
@@ -29,7 +13,7 @@ static NSString* packageUrl = @"https://cdn.brytecore.com/packages/";
 static NSString* packageName = @"/package.json";
 static NSString* hostname = @"com.brytecore.mobile";
 static NSString* library = @"iOS";
-static NSString* libraryVersion = @"0.0.0";
+static NSString* libraryVersion = @"0.1.0";
 static NSDictionary* eventNames;
 
 // --------------------------------- MARK: dynamic variables -------------------------------- //
@@ -631,7 +615,7 @@ Boolean validationMode = false;
 }
 
 /**
- Generate RFC4112 version 4 compliant UUID using Swift's built-in generator
+ Generate UUID using Objective-C built-in generator
  
  - link: https://developer.apple.com/documentation/foundation/uuid
  - returns: a new UUID string
