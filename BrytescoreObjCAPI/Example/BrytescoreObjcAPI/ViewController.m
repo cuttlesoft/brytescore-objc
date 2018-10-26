@@ -33,7 +33,7 @@ UIColor* orange;
 
     apiManager = [[BrytescoreAPIManager alloc] initWithAPIKey:@"abc123"];
 
-	blue = [UIColor colorWithRed:0.15 green:0.66 blue:0.88 alpha:0.8];
+    blue = [UIColor colorWithRed:0.15 green:0.66 blue:0.88 alpha:0.8];
     green = [UIColor colorWithRed:0.46 green:0.71 blue:0.24 alpha:0.8];
     orange = [UIColor colorWithRed:0.87 green:0.53 blue:0.20 alpha:0.8];
 
