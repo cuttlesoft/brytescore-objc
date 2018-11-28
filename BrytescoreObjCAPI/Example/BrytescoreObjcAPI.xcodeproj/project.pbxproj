@@ -65,6 +65,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7413190E2177BE6700DD024C /* BrytescoreObjcAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BrytescoreObjcAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		741319112177C51B00DD024C /* BrytescoreObjcAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BrytescoreObjcAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		743BD1B321AF0E1900F261CC /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		7C6CB077EF8C1228FE11224E /* Pods_BrytescoreObjcAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrytescoreObjcAPI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8ED76A31416DD251821535BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -185,6 +186,7 @@
 				385CF33BA4AA1FBEFE3E9205 /* BrytescoreObjcAPI.podspec */,
 				8ED76A31416DD251821535BA /* README.md */,
 				49DA1B2DE5814BFD377A648A /* LICENSE */,
+				743BD1B321AF0E1900F261CC /* CHANGELOG.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
