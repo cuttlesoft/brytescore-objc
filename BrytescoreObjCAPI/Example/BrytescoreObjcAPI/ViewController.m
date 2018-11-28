@@ -99,7 +99,7 @@ UIColor* orange;
     NSDictionary* registrationData = @{
         @"isLead": @false,
         @"userAccount": @{
-            @"id": @2
+            @"id": @"2"
         }
     };
     [apiManager registeredAccount:[registrationData mutableCopy]];
@@ -112,7 +112,7 @@ UIColor* orange;
 - (IBAction)trackAuthenticated:(id)sender {
     NSDictionary* authenticatedData = @{
         @"userAccount": @{
-            @"id": @2
+            @"id": @"2"
         }
     };
     [apiManager authenticated:[authenticatedData mutableCopy]];
@@ -125,7 +125,7 @@ UIColor* orange;
 - (IBAction)trackSubmittedForm:(id)sender {
     NSDictionary* submittedFormData = @{
         @"userAccount": @{
-            @"id": @2
+            @"id": @"2"
         }
     };
     [apiManager submittedForm:[submittedFormData mutableCopy]];
@@ -138,7 +138,7 @@ UIColor* orange;
 - (IBAction)trackStartedChat:(id)sender {
     NSDictionary* startedChatData = @{
         @"userAccount": @{
-            @"id": @2
+            @"id": @"2"
         }
     };
     [apiManager startedChat:[startedChatData mutableCopy]];
@@ -151,7 +151,7 @@ UIColor* orange;
 - (IBAction)trackUpdatedUserInfo:(id)sender {
     NSDictionary* updatedUserInfoData = @{
         @"userAccount": @{
-            @"id": @2
+            @"id": @"2"
         }
     };
     [apiManager updatedUserInfo:[updatedUserInfoData mutableCopy]];

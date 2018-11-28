@@ -20,7 +20,7 @@ static NSDictionary* eventNames;
 NSString* _apiKey = nil;
 
 // Variables to hold package-wide IDs
-NSInteger userId = 0;
+NSString* userId = nil;
 NSString* anonymousId = nil;
 NSString* sessionId = nil;
 NSString* pageViewId = nil;
@@ -85,10 +85,11 @@ Boolean validationMode = false;
         [defaults setObject:sessionId forKey:@"brytescore_session_sid"];
         
         // Retrieve user ID from brytescore_uu_uid
-        userId = [defaults integerForKey:@"brytescore_uu_uid"];
+        userId = (NSString*)[defaults objectForKey:@"brytescore_uu_uid"] ? : @"";
+        [defaults setObject:userId forKey:@"brytescore_uu_uid"];
         
         // Check if we have an existing aid, otherwise generate
-        if ([defaults stringForKey:@"brytescore_uu_aid"] != nil) {
+        if ([defaults objectForKey:@"brytescore_uu_aid"] != nil) {
             anonymousId = [defaults stringForKey:@"brytescore_uu_aid"];
             NSLog(@"Retrieved anonymous user ID: %@", anonymousId);
         } else {
@@ -395,8 +396,8 @@ Boolean validationMode = false;
         NSLog(@"data.userAccoutn is not defined");
         return;
     }
-    NSInteger newUserId = [[userAccount objectForKey:@"id"] integerValue];
-    if (newUserId == 0) {
+    NSString* newUserId = (NSString*)[userAccount objectForKey:@"id"];
+    if ([newUserId isEqual:@""]) {
         NSLog(@"data.userAccount.id is not defined");
         return;
     }
@@ -411,20 +412,20 @@ Boolean validationMode = false;
     }
     
     // Retrieve user Id from brytescore_uu_uid
-    NSInteger storedUserId = 0;
+    NSString* storedUserId = @"";
     if ([defaults objectForKey:@"brytescore_uu_uid"] != nil) {
-        storedUserId = [[defaults objectForKey:@"brytescore_uu_uid"] integerValue];
-        NSLog(@"Retrieved user Id: %lds", (long)storedUserId);
+        storedUserId = (NSString*)[defaults objectForKey:@"brytescore_uu_uid"];
+        NSLog(@"Retrieved user Id: %@", storedUserId);
     }
     
     // If there is a UID stored locally and the localUID does not match our new UID
-    if (storedUserId != 0 && storedUserId != newUserId) {
+    if (storedUserId != nil && ![storedUserId isEqual:newUserId]) {
         [self changeLoggedInUser:newUserId]; // Saves our new user Id to our global user Id
     }
     
     // Save our anonymous Id and user Id to local storage
     [defaults setObject:anonymousId forKey:@"brytescore_uu_aid"];
-    [defaults setInteger:userId forKey:@"brytescore_uu_uid"];
+    [defaults setObject:userId forKey:@"brytescore_uu_uid"];
     [defaults synchronize];
     
     // Finally, in any case, track the authentication
@@ -541,7 +542,7 @@ Boolean validationMode = false;
     [eventData setObject:hostname forKey:@"hostName"];
     [eventData setObject:_apiKey forKey:@"apiKey"];
     [eventData setObject:anonymousId ? : @"" forKey:@"anonymousId"];
-    [eventData setObject:[NSNumber numberWithInteger:userId] forKey:@"userId"];
+    [eventData setObject:userId ? : @"" forKey:@"userId"];
     [eventData setObject:[self generateUUID] forKey:@"pageViewId"];
     [eventData setObject:sessionId ? : @"" forKey:@"sessionId"];
     [eventData setObject:library forKey:@"library"];
@@ -633,18 +634,18 @@ Boolean validationMode = false;
  
  - parameter userID: The user ID.
  */
-- (void) changeLoggedInUser:(NSInteger)userID {
+- (void) changeLoggedInUser:(NSString*)userID {
     // Kill current session for old user
     [self killSession];
     
     // Update and save the global user Id variable
     userId = userID;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:sessionId forKey:@"brytescore_uu_uid"];
+    [defaults setObject:userId forKey:@"brytescore_uu_uid"];
     
     // Generate and save new anonymousId
     anonymousId = [self generateUUID];
-    [defaults setObject:sessionId forKey:@"brytescore_uu_aid"];
+    [defaults setObject:anonymousId forKey:@"brytescore_uu_aid"];
     [defaults synchronize];
     
     NSMutableDictionary* idData = [NSMutableDictionary new];
@@ -694,13 +695,13 @@ Boolean validationMode = false;
         NSLog(@"data.userAccount is not defined");
     }
     
-    NSInteger localUserId = [[userAccount objectForKey:@"id"] integerValue];
-    if (localUserId == 0) {
+    NSString* localUserId = (NSString*)[userAccount objectForKey:@"id"];
+    if ([localUserId isEqual:@""]) {
         NSLog(@"data.userAccount.id is not defined");
     }
     
     // If we haven't saved the user Id globally, or the user Ids do not match
-    if (userId == 0 || localUserId != userId) {
+    if ([userId isEqual:@""] || ![localUserId isEqual:userId]) {
         // Retrieve anonymous user Id from brytescore_uu_aid, or generate a new anonymous user Id
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         anonymousId = [defaults objectForKey:@"brytescore_uu_aid"];
@@ -721,7 +722,7 @@ Boolean validationMode = false;
         
         // Save our anonymous Id and user Id to local storage
         [defaults setObject:anonymousId forKey:@"brytescore_uu_aid"];
-        [defaults setInteger:userId forKey:@"brytescore_uu_uid"];
+        [defaults setObject:userId forKey:@"brytescore_uu_uid"];
         [defaults synchronize];
     }
     return true;
