@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BrytescoreObjcAPI'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Track user behavior and score their engagment with the Brytescore API.'
 
 # This description is used to generate tags and improve search results.
